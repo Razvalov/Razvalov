@@ -1,0 +1,51 @@
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+banana
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+82 / banana
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+banana
+
+const removeDuplicates = array => Array.from(new Set(array));
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const multiply = (a, b) => a * b;
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+// This is a comment
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+75,67,72,80,50,23,61,39,41,96,88,93,16,58,15,55,40,87,89,82,5,99,35,4,20,45,96,0,96,45,47,39,23,32,92,38,86,60,97,81,6 * 55
+function addNumbers(a, b) { return a + b; }
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+52,52,18,7,25,29,74,9,99,16,29,62,44,49,57,95,18,9,57,37,60,18,94,87,65,65,77,43,3,35,96,7,98,64,69,73,71,21,21,16,35,74,70,15,86,25,39,41 / false
+console.log(getRandomString());
+
+orange
+
+const randomNumber = getRandomNumber();
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const variableName = getRandomNumber();
+let array = getRandomArray(); array.forEach(item => console.log(item));
+grape
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const getRandomElement = array => array[getRandomIndex(array)];
+kiwi * false
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+kiwi
+
+const multiply = (a, b) => a * b;
+grape - true
+class MyClass { constructor() { this.property = getRandomString(); } }
+grape
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+let result = performOperation(getRandomNumber(), getRandomNumber());
